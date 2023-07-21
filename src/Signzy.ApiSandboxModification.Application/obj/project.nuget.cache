@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "WzfgB0PrktSYNeqmD9H9wdH/fwqPvyzkL6TP1ISIfop908M5XVMWv1G2TYdqyRKCvon4Z7OZJMe3Ps8LhTZKdQ==",
+  "success": false,
+  "projectFilePath": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Application\\Signzy.ApiSandboxModification.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'E:\\signzy-api-sandbox-modification\\src\\Nippon.PaintPartner.Domain\\Nippon.PaintPartner.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "E:\\signzy-api-sandbox-modification\\src\\Nippon.PaintPartner.Domain\\Nippon.PaintPartner.Domain.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'E:\\signzy-api-sandbox-modification\\src\\Nippon.PaintPartner.Infrastructure\\Nippon.PaintPartner.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "E:\\signzy-api-sandbox-modification\\src\\Nippon.PaintPartner.Infrastructure\\Nippon.PaintPartner.Infrastructure.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
