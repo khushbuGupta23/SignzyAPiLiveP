@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Services
+namespace Signzy.ApiSandboxModification.Infrastructure.Services
 {
     public static class ViewFormulationCalculation
     {

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Nippon.PaintPartner.API": {
+    "Signzy.ApiSandboxModification.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

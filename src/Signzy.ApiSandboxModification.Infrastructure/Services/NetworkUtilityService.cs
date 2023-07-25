@@ -1,12 +1,13 @@
-﻿using Nippon.PaintPartner.Application.Interfaces;
+﻿using Signzy.ApiSandboxModification.Application.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Services
+namespace Signzy.ApiSandboxModification.Infrastructure.Services
 {
     public class NetworkUtilityService : INetworkUtilityService
     {

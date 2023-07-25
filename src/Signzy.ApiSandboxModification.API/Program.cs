@@ -1,5 +1,6 @@
-using Nippon.PaintPartner.Application;
-using Nippon.PaintPartner.Infrastructure;
+
+using Signzy.ApiSandboxModification.Application;
+using Signzy.ApiSandboxModification.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

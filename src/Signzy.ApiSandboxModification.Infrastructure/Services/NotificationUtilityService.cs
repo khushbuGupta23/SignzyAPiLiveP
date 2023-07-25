@@ -1,4 +1,5 @@
-﻿using Nippon.PaintPartner.Domain.Interfaces;
+﻿
+using Signzy.ApiSandboxModification.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Services
+namespace Signzy.ApiSandboxModification.Infrastructure.Services
 {
     public class NotificationUtilityService : INotificationUtilityService
     {

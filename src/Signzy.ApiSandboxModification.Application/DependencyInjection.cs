@@ -1,22 +1,17 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Nippon.PaintPartner.Application.Interfaces;
-using Nippon.PaintPartner.Application.Services;
+using Signzy.ApiSandboxModification.Application.Interfaces;
+using Signzy.ApiSandboxModification.Application.Services;
 
-using Nippon.PaintPartner.Infrastructure.Services;
-
-namespace Nippon.PaintPartner.Application
+namespace Signzy.ApiSandboxModification.Application
 {
     public static class DependencyInjection
     {
 
         public static void AddApplication(this IServiceCollection services)
         {
-            
-
-            services.AddScoped<IAddressService, AddressService>();
-            services.AddScoped<IActivityLogService, ActivityLogService>();
-
-
+            services.AddScoped<IEmailValidationService, EmailValidationService>();
+            services.AddScoped<ILoginService, LoginService>();
+            services.AddScoped<IEmailVerificationService, EmailVeriFicationService>();
 
 
         }

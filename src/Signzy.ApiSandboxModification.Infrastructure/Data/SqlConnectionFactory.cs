@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Nippon.PaintPartner.Infrastructure.Interfaces;
+using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Data
+namespace Signzy.ApiSandboxModification.Infrastructure.Data
 {
     public class SqlConnectionFactory:IDbConnectionFactory
     {

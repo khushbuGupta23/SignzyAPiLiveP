@@ -1,8 +1,5 @@
 ﻿using Dapper;
-using Nippon.PaintPartner.Domain.Entities;
-using Nippon.PaintPartner.Infrastructure.Data;
-using Nippon.PaintPartner.Infrastructure.Data.Dapper;
-using Nippon.PaintPartner.Infrastructure.Interfaces;
+using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Repository
+namespace Signzy.ApiSandboxModification.Infrastructure.Repository
 {
     public abstract class DapperRepository
     {

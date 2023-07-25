@@ -8,14 +8,18 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.122" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nippon.PaintPartner.Domain\Nippon.PaintPartner.Domain.csproj" />
+    <ProjectReference Include="..\Signzy.ApiSandboxModification.Domain\Signzy.ApiSandboxModification.Domain.csproj" />
   </ItemGroup>
 
 </Project>

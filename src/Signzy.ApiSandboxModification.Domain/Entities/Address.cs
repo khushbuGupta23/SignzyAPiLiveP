@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Domain.Entities
+namespace Signzy.ApiSandboxModification.Domain.Entities
 {
     public class Address
     {

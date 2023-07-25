@@ -1,22 +1,21 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Nippon.PaintPartner.Infrastructure.Data;
-using Nippon.PaintPartner.Infrastructure.Data.Dapper;
-using Nippon.PaintPartner.Infrastructure.Interfaces;
+using Signzy.ApiSandboxModification.Infrastructure.Data;
+using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
+using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
+using Signzy.ApiSandboxModification.Infrastructure.Repository;
 
-using Nippon.PaintPartner.Infrastructure.Repository;
-
-using Nippon.PaintPartner.Infrastructure.Services;
-
-namespace Nippon.PaintPartner.Infrastructure
+namespace Signzy.ApiSandboxModification.Infrastructure
 {
     public static class DependencyInjection
     {
         public static void AddInfrastructure(this IServiceCollection services)
         {  
-            services.AddScoped<IAddressRepository, AddressRepository>();
-            services.AddScoped<IDbConnectionFactory, SqlConnectionFactory>();
+
+            services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IDapperWrapper, DapperWrapper>();
-            services.AddScoped<IActivityLogRepository, ActivityLogRepository>();
+            services.AddScoped<IEmailValidationRepository, EmailValidationRepository>();
+            services.AddScoped< IDbConnectionFactory, SqlConnectionFactory>();
+            services.AddScoped<IEmailVerificationRepository, EmailVerificationRepository>();
         }
     }
 }

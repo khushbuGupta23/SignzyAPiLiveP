@@ -7,18 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nippon.PaintPartner.Application\Nippon.PaintPartner.Application.csproj" />
+    <ProjectReference Include="..\Signzy.ApiSandboxModification.Application\Signzy.ApiSandboxModification.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ExcelFiles\" />
-    <Folder Include="NPNImages\NPNMobImage\HomeImage\" />
-    <Folder Include="NPNImages\NPNMobImage\DrawerImage\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.101.0" />
     <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 

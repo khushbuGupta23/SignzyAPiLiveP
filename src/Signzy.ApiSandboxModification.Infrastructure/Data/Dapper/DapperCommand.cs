@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Data.Dapper
+namespace Signzy.ApiSandboxModification.Infrastructure.Data.Dapper
 {
     public class DapperCommand
     {

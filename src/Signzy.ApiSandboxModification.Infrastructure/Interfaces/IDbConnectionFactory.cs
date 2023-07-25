@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Interfaces
+namespace Signzy.ApiSandboxModification.Infrastructure.Interfaces
 {
     public interface IDbConnectionFactory
     {

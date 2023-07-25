@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using Nippon.PaintPartner.Infrastructure.Data.Dapper;
+using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nippon.PaintPartner.Infrastructure.Interfaces
+namespace Signzy.ApiSandboxModification.Infrastructure.Interfaces
 {
     public interface IDapperWrapper
     {
@@ -37,7 +37,6 @@ namespace Nippon.PaintPartner.Infrastructure.Interfaces
 
         public Task<int> ExecuteAsync(IDbConnection dbConnection, DapperCommand dapperCommand, DynamicParameters
             parameters, CancellationToken cancellationToken = default);
-
-        
+       
     }
 }

@@ -11,12 +11,12 @@
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
     <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nippon.PaintPartner.Domain\Nippon.PaintPartner.Domain.csproj" />
-    <ProjectReference Include="..\Nippon.PaintPartner.Infrastructure\Nippon.PaintPartner.Infrastructure.csproj" />
+    <ProjectReference Include="..\Signzy.ApiSandboxModification.Infrastructure\Signzy.ApiSandboxModification.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

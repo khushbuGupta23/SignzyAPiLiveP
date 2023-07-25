@@ -1,15 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "Ug6dOER/YsWtQwOpZihZhSQ9zFzrMmZhCuThf2+y/dPp40wowakaYYMNtpXrMRrku5omxvECDZ+TsGjkaZSOmw==",
+  "dgSpecHash": "AWgnEVoRpTKO+IeGPRutuReud7nh8yKxWvI6rkTALc1TT/OQTNtiHSVvLl3BtQ4zTu4/0hVQRT15Ugfpm1zWSg==",
   "success": true,
-  "projectFilePath": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    "C:\\Users\\Khushbu\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }
