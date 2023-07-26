@@ -20,7 +20,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Data
         }
         public IDbConnection CreateConnection()
         {
-            var connectionString = _configuration.GetConnectionString("MyDatabase");
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
             return new SqlConnection(connectionString);
         }
 

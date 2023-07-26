@@ -4,12 +4,9 @@ using Signzy.ApiSandboxModification.Domain.Entities;
 using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
 using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Net;
-using System.Net.Http.Headers;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
