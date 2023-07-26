@@ -1,25 +1,12 @@
 ﻿
-using Dapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using RestSharp;
 using Signzy.ApiSandboxModification.Domain.Entities;
 using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
 using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Net.Http.Headers;
-using System.Reflection.Metadata;
-using System.Security.Cryptography;
 using System.Text;
-using System.Text.Json;
-using System.Text.Json.Nodes;
-using System.Threading.Tasks;
 
 namespace Signzy.ApiSandboxModification.Infrastructure.Repository
 {
@@ -40,9 +27,11 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
             Dictionary<string, string> jsonValues = new Dictionary<string, string>();
             jsonValues.Add("emailId", emailId);
 
+
             var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
                       _logintoken, cancellationToken);
             string Token = res.First().token;
+            string UserId = res.First().userId;
             var client = new HttpClient();
            
           
@@ -50,7 +39,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/6492ba6a2d80a00024d79f9c/emailverifications"),
+                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/"+ UserId + "/emailverifications"),
 
                 Headers =
                             {
@@ -59,8 +48,14 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
                               { "Authorization", Token },
 
                 },
-                
-                Content = new StringContent(JsonConvert.SerializeObject(jsonValues), UnicodeEncoding.UTF8, "application/json")
+
+                Content = new StringContent("{\"essentials\":{\"emailId\":\"" + emailId + "\"}}")
+                {
+                    Headers =
+        {
+            ContentType = new MediaTypeHeaderValue("application/json")
+        }
+                }
             };
 
 

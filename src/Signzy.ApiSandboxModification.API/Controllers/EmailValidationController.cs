@@ -4,7 +4,9 @@ using Signzy.ApiSandboxModification.Domain.Entities;
 
 namespace Signzy.ApiSandboxModification.API.Controllers
 {
-    public class EmailValidationController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EmailValidationController : ControllerBase
     {
 
         private readonly IEmailValidationService _emailService;

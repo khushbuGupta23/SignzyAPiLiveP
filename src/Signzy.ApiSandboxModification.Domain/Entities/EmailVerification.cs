@@ -23,7 +23,7 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
     public class EmailVerificationResult
     {
         public  EmailVerification? emailVerification { get; set; }
-        public PersonalInfo? personalInfo { get; set; }
+        public PersonalInfo personalInfo { get; set; }
         public DomainDetails domainDetails { get; set; }
         public DomainResult domainResult { get; set; }
         public string emailId { get; set; }
@@ -301,31 +301,31 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string name { get; set; }
         public string legalName { get; set; }
         public string domain { get; set; }
-        public string domainAliases { get; set; }
-        public string site { get; set; }
-        public string category { get; set; }
-        public string tags { get; set; }
+        public List<object> domainAliases { get; set; }
+        public Site site { get; set; }
+        public Category category { get; set; }
+        public List<string> tags { get; set; }
         public string description { get; set; }
         public string foundedYear { get; set; }
         public string location { get; set; }
         public string timeZone { get; set; }
         public string utcOffset { get; set; }
-        public string geo { get; set; }
+        public Geo geo { get; set; }
         public string logo { get; set; }
-        public string facebook { get; set; }
-        public string linkedin { get; set; }
-        public string twitter { get; set; }
-        public string crunchbase { get; set; }
+        public Facebook facebook { get; set; }
+        public Linkedin linkedin { get; set; }
+        public Twitter twitter { get; set; }
+        public Crunchbase crunchbase { get; set; }
         public string emailProvider { get; set; }
         public string type { get; set; }
         public string ticker { get; set; }
-        public string identifiers { get; set; }
+        public Identifiers identifiers { get; set; }
         public string phone { get; set; }
-        public string metrics { get; set; }
+        public Metrics metrics { get; set; }
         public string indexedAt { get; set; }
-        public string tech { get; set; }
-        public string parent { get; set; }  
-        public string ultimate_parent { get; set; }
+        public List<string> tech { get; set; }
+        public Parent parent { get; set; }
+        public UltimateParent ultimate_parent { get; set; }
     }
     public class Site
     {
@@ -363,7 +363,7 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string fiscalYearEnd { get; set; }
 
     }
-    public class Ultimateparent
+    public class UltimateParent
     {
         public string domain { get; set; }
     }
