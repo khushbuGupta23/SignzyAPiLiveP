@@ -25,5 +25,13 @@ namespace Signzy.ApiSandboxModification.Application.Services
         {
             return await _addressProofsRepository.SubmitOtpAsync(essentials, cancellationToken);
         }
+        public async Task<ElectricityDetail> ElectricityDetailAsync(string consumerNo, string electricityProvider, string installationNumber, string mobileNo, CancellationToken cancellationToken)
+        {
+            return await _addressProofsRepository.ElectricityDetailAsync(consumerNo,electricityProvider,installationNumber, mobileNo, cancellationToken);
+        }
+        public async Task<IEnumerable<ElectricityBoard>> ElectricityBoardAsync(CancellationToken cancellationToken)
+        {
+            return await _addressProofsRepository.ElectricityBoardAsync(cancellationToken);
+        }
     }
 }
