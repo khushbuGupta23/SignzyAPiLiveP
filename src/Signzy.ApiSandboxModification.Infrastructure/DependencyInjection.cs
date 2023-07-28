@@ -11,6 +11,8 @@ namespace Signzy.ApiSandboxModification.Infrastructure
         public static void AddInfrastructure(this IServiceCollection services)
         {  
 
+            services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+            services.AddScoped<IAddressProofsRepository, AddressProofsRepository>();
             services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IDapperWrapper, DapperWrapper>();
             services.AddScoped<IEmailValidationRepository, EmailValidationRepository>();

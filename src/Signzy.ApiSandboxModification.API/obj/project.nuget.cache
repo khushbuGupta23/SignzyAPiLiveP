@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CxnpLXeqlGb6QMk/fxa6y9N4+s6V2uFDfciKPbS5vETJ4CLYwGJlM4pXvmsJiBtYWQtxqkM/wL5kBo6WHha0ww==",
+  "dgSpecHash": "4Rvrg/PZRuZ2EcTzx8xb4Sc6GnA5J1DSIySPLzzhcSzBSO+31Zell92b2jDZiNuMn0/+tPsPe7xvCEs8u360cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.API\\Signzy.ApiSandboxModification.API.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\Khushbu\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\irony.netcore\\1.0.11\\irony.netcore.1.0.11.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

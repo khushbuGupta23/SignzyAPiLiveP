@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Signzy.ApiSandboxModification.Application.Interfaces;
 using Signzy.ApiSandboxModification.Domain.Entities;
+using Results = Signzy.ApiSandboxModification.Domain.Entities.Results;
 
 namespace Signzy.ApiSandboxModification.API.Controllers
 {
@@ -19,7 +20,7 @@ namespace Signzy.ApiSandboxModification.API.Controllers
 
         [HttpPost]
         [Route("EmailValidationAsync")]
-        public async Task<EmailValidation> EmailValidationAsync(string emailId, CancellationToken cancellationToken)
+        public async Task<Results> EmailValidationAsync(string emailId, CancellationToken cancellationToken)
         {
             return await _emailService.EmailValidationAsync(emailId, cancellationToken);
         }

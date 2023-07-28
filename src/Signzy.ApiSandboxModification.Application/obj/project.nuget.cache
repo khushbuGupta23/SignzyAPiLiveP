@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zji1IvqGe5YuDGVXMObFnCM7o6H3fHu8ylf+noh52dLyyc+LlIykaxgnbWmLamRc+1GPnxguSglLeH1RUiDHiw==",
+  "dgSpecHash": "nXTaHAA8DAyBJxxEWN19TBvv1ab2DsXIJ8/dKgv+qzgWM0YCj47Pky+6cCMMkyT55e8vFEFbdnMXmOHtUI6a7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Application\\Signzy.ApiSandboxModification.Application.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\Khushbu\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
+    "C:\\Users\\Khushbu\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",

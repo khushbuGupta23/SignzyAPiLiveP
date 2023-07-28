@@ -46,9 +46,9 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
 
             var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
-          
             string body = await response.Content.ReadAsStringAsync();
             var res = JsonConvert.DeserializeObject<LoginAuth>(body);
+
             var parameters = new DynamicParameters();
             parameters.Add(Mapping.Mapping.user, username);
             parameters.Add(Mapping.Mapping.pass, password);

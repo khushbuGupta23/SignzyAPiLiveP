@@ -22,6 +22,10 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Mapping
         public const string ttl = "ttl";
         public const string created = "created";
         public const string userId = "userId";
+        public const string Task = "Task";
+        public const string CountryCode = "CountryCode";
+        public const string MobileNumber = "MobileNumber";
+        public const string ReferenceId = "ReferenceId";
 
 
 

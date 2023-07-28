@@ -9,6 +9,9 @@ namespace Signzy.ApiSandboxModification.Application
 
         public static void AddApplication(this IServiceCollection services)
         {
+
+            services.AddScoped<IOrganizationService,OrganizationService>();
+            services.AddScoped<IAddressProofService, AddressProofService>();
             services.AddScoped<IEmailValidationService, EmailValidationService>();
             services.AddScoped<ILoginService, LoginService>();
             services.AddScoped<IEmailVerificationService, EmailVeriFicationService>();

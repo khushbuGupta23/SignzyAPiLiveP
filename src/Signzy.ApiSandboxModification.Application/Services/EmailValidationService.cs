@@ -18,9 +18,26 @@ namespace Signzy.ApiSandboxModification.Application.Services
         {
             _emailRepository = emailRepository;
         }
-        public async Task<EmailValidation> EmailValidationAsync(string emailId, CancellationToken cancellationToken)
+        public async Task<Results> EmailValidationAsync(string emailId, CancellationToken cancellationToken)
         {
-            return await _emailRepository.EmailValidationAsync(emailId, cancellationToken);
+            var data = await _emailRepository.EmailValidationAsync(emailId, cancellationToken);
+
+            return new Results
+            {
+                email = data?.result?.emailverifyData?.email,
+                status = data?.result?.emailverifyData?.status,
+                sub_status = data?.result?.emailverifyData?.sub_status,
+                free_email = data?.result?.emailverifyData?.free_email,
+                account = data?.result?.emailverifyData?.account,
+                city = data?.result?.emailverifyData?.city,
+                country = data?.result?.emailverifyData?.country,
+                did_you_mean = data?.result?.emailverifyData?.did_you_mean,
+                domain = data?.result?.emailverifyData?.domain,
+                smtp_provider = data?.result?.emailverifyData?.smtp_provider,
+                gender = data?.result?.emailverifyData?.gender,
+                region = data?.result?.emailverifyData?.region,
+                name = data?.result?.emailverifyData?.name,
+            };
         }
 
     }

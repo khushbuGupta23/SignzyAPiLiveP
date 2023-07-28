@@ -13,8 +13,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
     {
         private readonly DapperCommand _logintoken =
           new DapperCommand("dbo.spGetLoginToken", CommandType.StoredProcedure);
-        public EmailValidationRepository(IDbConnectionFactory dbConnectionFactory, IDapperWrapper dapperWrapper) :
-           base(dbConnectionFactory, dapperWrapper)
+        public EmailValidationRepository(IDbConnectionFactory dbConnectionFactory, IDapperWrapper dapperWrapper) : base(dbConnectionFactory, dapperWrapper)
         {
         }
 
@@ -37,22 +36,20 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
                 Method = HttpMethod.Post,
                 RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/"+ UserId + "/emailvalidations"),
                 Headers =
-    {
-        { "Accept-Language", "en-US,en;q=0.8" },
-        { "Accept", "*/*" },
-        { "Authorization", Token },
-    },
+                            {
+                                { "Accept-Language", "en-US,en;q=0.8" },
+                                { "Accept", "*/*" },
+                                { "Authorization", Token },
+                            },
                 Content = new StringContent("{\"essentials\":{\"emailId\":\""+ emailId + "\"}}")
                 {
-                    Headers =
-        {
-            ContentType = new MediaTypeHeaderValue("application/json")
-        }
+                        Headers =
+                                {
+                                    ContentType = new MediaTypeHeaderValue                      ("application/json")
+                                }
                 }
             };
 
-         
-      
             
             var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
@@ -60,6 +57,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
             return JsonConvert.DeserializeObject<EmailValidation>(body);
             
         }
+
             
     }
 }

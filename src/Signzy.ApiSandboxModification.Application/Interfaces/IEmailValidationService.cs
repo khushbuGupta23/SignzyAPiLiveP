@@ -9,6 +9,6 @@ namespace Signzy.ApiSandboxModification.Application.Interfaces
 {
     public interface IEmailValidationService
     {
-        public Task<EmailValidation> EmailValidationAsync(string emailId, CancellationToken cancellationToken);
+        public Task<Results> EmailValidationAsync(string emailId, CancellationToken cancellationToken);
     }
 }

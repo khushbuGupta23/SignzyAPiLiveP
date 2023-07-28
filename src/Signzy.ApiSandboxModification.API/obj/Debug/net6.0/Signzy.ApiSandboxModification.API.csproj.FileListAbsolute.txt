@@ -13,6 +13,8 @@ C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSand
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\ExcelNumberFormat.dll
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\Grpc.Core.dll
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\IdentityModel.dll
+C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\IdentityServer4.Storage.dll
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\Irony.dll
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Khushbu\source\repos\signzy-api-sandbox-modification\src\Signzy.ApiSandboxModification.API\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
