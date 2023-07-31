@@ -6,7 +6,7 @@ namespace Signzy.ApiSandboxModification.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PanToGstController : Controller
+    public class PanToGstController : ControllerBase
     {
         private readonly IPanToGstService _panToGstService;
         public PanToGstController(IPanToGstService panToGstService)
