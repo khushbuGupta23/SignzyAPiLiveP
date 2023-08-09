@@ -13,5 +13,7 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string electricityProvider { get; set; }
         public string name { get; set; }
 
+
     }
+  
 }

@@ -12,6 +12,7 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
             public string id { get; set; }
             public string patronId { get; set; }
             public ResultUdyam result { get; set; }
+            public ErrorUdhyam error { get; set; }
          }
         public class EnterpriseType
         {
@@ -74,8 +75,16 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
             public List<NationalIndustryClassificationCode> nationalIndustryClassificationCodes { get; set; }
             public string pdfUrl { get; set; }
         }
+        public class ErrorUdhyam
+            {
+        public string statusCode { get; set; }
+        public string message { get; set; }
+        public string status { get; set; }
+        public string name { get; set; }
+    }
 
-      
 
-    
+
+
+
 }

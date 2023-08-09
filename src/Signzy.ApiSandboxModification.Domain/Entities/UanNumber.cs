@@ -9,6 +9,8 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
     public class UanNumber
     {
         public ResultUAN result { get; set; }
+        public ErrorsUdhyag error { get; set; }
+
     }
     public class ResultUAN
     {
@@ -27,6 +29,7 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string nic4Digit { get; set; }
         public string nic5DigitCode { get; set; }
         public string status { get; set; }
+
     }
 
     public class EssentialsUAN
@@ -39,6 +42,15 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string type { get; set; }
         public EssentialsUAN essentials { get; set; }
     }
+    public class ErrorsUdhyag
+    {
+        public string statusCode { get; set; }
+        public string message { get; set; }
+        public string status { get; set; }
+        public string name { get; set; }
 
+
+    }
+   
 
 }

@@ -48,9 +48,44 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
                 Content = new StringContent(JsonConvert.SerializeObject(requestGstOtp), UnicodeEncoding.UTF8, "application/json")
             };
             var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            var body= await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<GstrInitiations>(body);
+            var body = await response.Content.ReadAsStringAsync();
+            //if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            //{
+                return JsonConvert.DeserializeObject<GstrInitiations>(body);
+            //}
+            //else
+            //{
+            //    return JsonConvert.DeserializeObject<GstrInitiations>(body);
+            //}
+        }
+
+        public async Task<GstAuthToken> GetGstAuthTokenAsync(EssentialsAuth essential, CancellationToken cancellationToken)
+        {
+            var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
+                    _logintoken, cancellationToken);
+            string Token = res.First().token;
+            string UserId = res.First().userId;
+            GstAuthInput GstAuthOtp = new GstAuthInput
+            {
+                essentials = essential,
+                task = "getAuthToken"
+            };
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/" + UserId + "/gstrinitiations"),
+                Headers =
+                                {
+                                    { "Accept-Language", "en-US,en;q=0.8" },
+                                    { "Accept", "*/*" },
+                                    { "Authorization", Token },
+                                },
+                Content = new StringContent(JsonConvert.SerializeObject(GstAuthOtp), UnicodeEncoding.UTF8, "application/json")
+            };
+            var response = await client.SendAsync(request);
+            var body = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<GstAuthToken>(body);
         }
 
     }

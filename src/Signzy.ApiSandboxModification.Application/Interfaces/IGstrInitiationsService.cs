@@ -10,5 +10,6 @@ namespace Signzy.ApiSandboxModification.Application.Interfaces
     public interface IGstrInitiationsService
     {
         public Task<GstrInitiations> GstrInitiationsAsync(EssentialsGSTR essential, CancellationToken cancellationToken);
+        public Task<GstAuthToken> GetGstAuthTokenAsync(EssentialsAuth essential, CancellationToken cancellationToken);
     }
 }

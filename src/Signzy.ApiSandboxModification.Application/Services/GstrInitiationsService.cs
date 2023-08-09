@@ -22,5 +22,10 @@ namespace Signzy.ApiSandboxModification.Application.Services
             return await _gstrInitiationsRepository.GstrInitiationsAsync(essential, cancellationToken);
         }
 
+        public async Task<GstAuthToken> GetGstAuthTokenAsync(EssentialsAuth essential, CancellationToken cancellationToken)
+        {
+            return await _gstrInitiationsRepository.GetGstAuthTokenAsync(essential, cancellationToken);
+        }
+
     }
 }

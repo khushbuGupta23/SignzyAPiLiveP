@@ -104,42 +104,17 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
             return JsonConvert.DeserializeObject<SubmitOTP>(body);
         }
 
-        public async Task<ElectricityDetail> ElectricityDetailAsync(string consumerNo,string electricityProvider,string installationNumber,string mobileNo, CancellationToken cancellationToken)
+
+        //ElectricityDetail
+        public async Task<IEnumerable<TblAuth>> ElectricityDetailAsync(CancellationToken cancellationToken)
         {
 
-                    var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
+                    var res=await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
                              _logintoken, cancellationToken);
-                    string Token = res.First().token;
-                    string UserId = res.First().userId;
-                    Dictionary<string, string> jsonValues = new Dictionary<string, string>();
-                    jsonValues.Add("consumerNo", consumerNo);
-                    jsonValues.Add("electricityProvider", electricityProvider);
-                    jsonValues.Add("installationNumber", installationNumber);
-                    jsonValues.Add("mobileNo", mobileNo);
-                    var client = new HttpClient();
-                    var request = new HttpRequestMessage
-                    {
-                        Method = HttpMethod.Post,
-                        RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/" + UserId + "/electricitybills"),
-                        Headers =
-                                    {
-                                        { "Accept-Language", "en-US,en;q=0.8" },
-                                        { "Accept", "*/*" },
-                                        { "Authorization", Token },
-                                    },
-                        Content = new StringContent("{\"essentials\":{\"consumerNo\":\""+ consumerNo + "\",\"electricityProvider\":\""+ electricityProvider + "\",\"installationNumber\":\""+ installationNumber + "\"}}")
-                        {
-                            Headers =
-        {
-            ContentType = new MediaTypeHeaderValue("application/json")
+            return res;
         }
-                        }
-                    };
-            var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            var body = await response.Content.ReadAsStringAsync();
-            return  JsonConvert.DeserializeObject<ElectricityDetail>(body);
-        }
+
+
         public async Task<IEnumerable<ElectricityBoard>> ElectricityBoardAsync(CancellationToken cancellationToken)
         {
             var result = await DapperWrapper.QueryAsync<ElectricityBoard>(GetConnection(), _getElectricityBoard, cancellationToken);

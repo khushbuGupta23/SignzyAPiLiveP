@@ -15,5 +15,9 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string userId { get; set; }
         public bool IsExpire { get; set; }
 
+        public object First()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

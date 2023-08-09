@@ -20,9 +20,9 @@ namespace Signzy.ApiSandboxModification.Application.Services
         }
 
     
-        public async Task<UanNumber> SearchUanAsync(string uamNumber, CancellationToken cancellationToken)
+        public async Task<UanNumber> SearchUanAsync(EssentialsUAN essentials1, CancellationToken cancellationToken)
         {
-            return await _organizationRepository.SearchUanAsync(uamNumber, cancellationToken);
+            return await _organizationRepository.SearchUanAsync(essentials1, cancellationToken);
         }
         public async Task<UdyamRegiResponse> UdyamRegistrationAsync(string udyamNumber, CancellationToken cancellationToken)
         {

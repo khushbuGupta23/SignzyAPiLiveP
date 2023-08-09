@@ -13,6 +13,8 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string patronId { get; set; }
         public string task { get; set; }
         public ResultGSTR result { get; set; }
+        public bool IsSuccess { get; set; }
+        public Errors Error { get; set; }
     }
         public class EssentialsGSTR
         {
@@ -30,7 +32,9 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string task { get; set; }
         public EssentialsGSTR essentials { get; set; }
     }
-
-
-
+    public class Errors {
+        public string statusCode { get; set; }
+        public string message { get; set; }
+        public string status { get; set; }
+    }
 }

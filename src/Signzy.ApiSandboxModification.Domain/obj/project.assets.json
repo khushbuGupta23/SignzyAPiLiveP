@@ -629,11 +629,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
+      "projectUniqueName": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
       "projectName": "Signzy.ApiSandboxModification.Domain",
-      "projectPath": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
+      "projectPath": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\Signzy.ApiSandboxModification.Domain.csproj",
       "packagesPath": "C:\\Users\\Khushbu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Khushbu\\source\\repos\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\obj\\",
+      "outputPath": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

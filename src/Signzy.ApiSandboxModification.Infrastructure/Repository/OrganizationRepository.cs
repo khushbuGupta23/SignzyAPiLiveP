@@ -24,36 +24,35 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
         }
 
 
-        public async Task<UanNumber> SearchUanAsync(string uamNumber, CancellationToken cancellationToken)
+        public async Task<UanNumber> SearchUanAsync(EssentialsUAN essentials1, CancellationToken cancellationToken)
         {
             var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
                       _logintoken, cancellationToken);
             string Token = res.First().token;
             string UserId = res.First().userId;
-            Dictionary<string, string> jsonValues = new Dictionary<string, string>();
-            jsonValues.Add("UamNumber", uamNumber);
+
+            UANInput UamNo = new UANInput
+            {
+                essentials = essentials1,
+                type = "uam",
+
+            };
 
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                RequestUri = new Uri("https://signzy.tech/api/v2/patrons/"+ UserId + "/udyogaadhaars"),
+                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/" + UserId + "/udyogaadhaars"),
                 Headers =
                         {
                             { "Accept-Language", "en-US,en;q=0.8" },
                             { "Accept", "*/*" },
                              { "Authorization", Token },
     },
-                Content = new StringContent("{\"type\":\"..uam.\",\"essentials\":{\"uamNumber\":\"+UamNumber+\"}}")
-                {
-                    Headers =
-        {
-            ContentType = new MediaTypeHeaderValue("application/json")
-        }
-                }
+                Content = new StringContent(JsonConvert.SerializeObject(UamNo), UnicodeEncoding.UTF8, "application/json")
             };
             var response = await client.SendAsync(request);
-                response.EnsureSuccessStatusCode();
+                
                 var body = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<UanNumber>(body);
         }
@@ -85,7 +84,6 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
                 }
             };
             var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
             var body = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<UdyamRegiResponse>(body);
         }

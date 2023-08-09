@@ -16,9 +16,9 @@ namespace Signzy.ApiSandboxModification.API.Controllers
 
         [HttpPost]
         [Route("SearchUanAsync")]
-        public async Task<UanNumber> SearchUanAsync(string uamNumber, CancellationToken cancellationToken)
+        public async Task<UanNumber> SearchUanAsync([FromQuery] EssentialsUAN essentials1, CancellationToken cancellationToken)
         {
-            return await _organizationService.SearchUanAsync(uamNumber, cancellationToken);
+            return await _organizationService.SearchUanAsync(essentials1, cancellationToken);
         }
 
         [HttpPost]

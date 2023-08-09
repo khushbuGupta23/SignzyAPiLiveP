@@ -12,6 +12,8 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string id { get; set; }
         public string patronId { get; set; }
         public ResultElectricity result { get; set; }
+        public ErrorElectricity error { get; set; }
+
     }
     public class EssentialsElectricity
     {
@@ -54,6 +56,13 @@ namespace Signzy.ApiSandboxModification.Domain.Entities
         public string pincode { get; set; }
         public List<string> country { get; set; }
         public string addressLine { get; set; }
+    }
+    public class ErrorElectricity
+    {
+        public string statusCode { get; set; }
+        public string message { get; set; }
+        public string status { get; set; }
+        public string name { get; set; }
     }
 
 

@@ -21,5 +21,12 @@ namespace Signzy.ApiSandboxModification.API.Controllers
             return await _gstrInitiationsService.GstrInitiationsAsync(essential, cancellationToken);
         }
 
+        [HttpPost]
+        [Route("GetGstAuthTokenAsync")]
+        public async Task<GstAuthToken> GetGstAuthTokenAsync([FromQuery] EssentialsAuth essential, CancellationToken cancellationToken)
+        {
+            return await _gstrInitiationsService.GetGstAuthTokenAsync(essential, cancellationToken);
+        }
+
     }
 }
