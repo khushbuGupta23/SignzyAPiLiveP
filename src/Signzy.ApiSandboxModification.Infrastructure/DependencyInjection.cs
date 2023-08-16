@@ -20,6 +20,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure
             services.AddScoped<IEmailValidationRepository, EmailValidationRepository>();
             services.AddScoped< IDbConnectionFactory, SqlConnectionFactory>();
             services.AddScoped<IEmailVerificationRepository, EmailVerificationRepository>();
+            services.AddScoped<IUserRepository,UserRepository>();
         }
     }
 }

@@ -24,68 +24,18 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
         }
 
 
-        public async Task<UanNumber> SearchUanAsync(EssentialsUAN essentials1, CancellationToken cancellationToken)
+        public async Task<IEnumerable<TblAuth>> SearchUanAsync(CancellationToken cancellationToken)
         {
             var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
-                      _logintoken, cancellationToken);
-            string Token = res.First().token;
-            string UserId = res.First().userId;
-
-            UANInput UamNo = new UANInput
-            {
-                essentials = essentials1,
-                type = "uam",
-
-            };
-
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/" + UserId + "/udyogaadhaars"),
-                Headers =
-                        {
-                            { "Accept-Language", "en-US,en;q=0.8" },
-                            { "Accept", "*/*" },
-                             { "Authorization", Token },
-    },
-                Content = new StringContent(JsonConvert.SerializeObject(UamNo), UnicodeEncoding.UTF8, "application/json")
-            };
-            var response = await client.SendAsync(request);
-                
-                var body = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<UanNumber>(body);
+                            _logintoken, cancellationToken);
+            return res;
+            
         }
 
-        public async Task<UdyamRegiResponse?> UdyamRegistrationAsync(string udyamNumber, CancellationToken cancellationToken)
+        public async Task<IEnumerable<TblAuth>> UdyamRegistrationAsync( CancellationToken cancellationToken)
         {
-            var res = await DapperWrapper.QueryAsync<TblAuth>(GetConnection(), _logintoken,      cancellationToken);
-                    string Token = res.First().token;
-                    string UserId = res.First().userId;
-            Dictionary<string, string> jsonValues = new Dictionary<string, string>();
-            jsonValues.Add("udyamNumber", udyamNumber);
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri("https://preproduction.signzy.tech/api/v2/patrons/" + UserId + "/udyamregistrations"),
-                Headers =
-                {
-                    { "Accept-Language", "en-US,en;q=0.8" },
-                    { "Accept", "*/*" },
-                    { "Authorization", Token },
-                },
-                Content = new StringContent("{\"essentials\":{\"udyamNumber\":\""+udyamNumber+"\"}}")
-                {
-                    Headers =
-                        {
-                            ContentType = new MediaTypeHeaderValue("application/json")
-                        }
-                }
-            };
-            var response = await client.SendAsync(request);
-            var body = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<UdyamRegiResponse>(body);
+            return await DapperWrapper.QueryAsync<TblAuth>(GetConnection(), _logintoken,      cancellationToken);
+                    
         }
     }
 }

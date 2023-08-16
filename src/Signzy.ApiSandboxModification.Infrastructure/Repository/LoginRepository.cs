@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Signzy.ApiSandboxModification.Infrastructure.Repository
@@ -22,6 +23,8 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
           base(dbConnectionFactory, dapperWrapper)
         {
         }
+
+      
         public async Task<LoginAuth> LoginVerificationAsync(string username,string password,CancellationToken cancellationToken)
         {
             Dictionary<string, string> jsonValues = new Dictionary<string, string>();
@@ -42,7 +45,6 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
                 Content = new StringContent(JsonConvert.SerializeObject(jsonValues), UnicodeEncoding.UTF8, "application/json")
            
             };
-
 
             var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();

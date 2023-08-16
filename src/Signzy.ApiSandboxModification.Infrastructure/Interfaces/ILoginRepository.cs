@@ -9,7 +9,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Interfaces
 {
     public interface ILoginRepository
     {
-
+       
         public Task<LoginAuth> LoginVerificationAsync(string username, string password, CancellationToken cancellationToken);
     }
 }

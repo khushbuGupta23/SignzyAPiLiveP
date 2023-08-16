@@ -109,9 +109,9 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Repository
         public async Task<IEnumerable<TblAuth>> ElectricityDetailAsync(CancellationToken cancellationToken)
         {
 
-                    var res=await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
+               var res=await DapperWrapper.QueryAsync<TblAuth>(GetConnection(),
                              _logintoken, cancellationToken);
-            return res;
+               return res;
         }
 
 

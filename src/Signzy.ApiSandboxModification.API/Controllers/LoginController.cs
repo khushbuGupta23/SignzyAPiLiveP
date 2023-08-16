@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Signzy.ApiSandboxModification.Application.Interfaces;
 using Signzy.ApiSandboxModification.Domain.Entities;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Signzy.ApiSandboxModification.API.Controllers
 {

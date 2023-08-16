@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Signzy.ApiSandboxModification.Domain.Entities.JwtLogin;
 using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,6 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Interfaces
 
         public Task<int> ExecuteAsync(IDbConnection dbConnection, DapperCommand dapperCommand, DynamicParameters
             parameters, CancellationToken cancellationToken = default);
-       
+
     }
 }

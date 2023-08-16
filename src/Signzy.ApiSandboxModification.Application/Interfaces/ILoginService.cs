@@ -9,7 +9,6 @@ namespace Signzy.ApiSandboxModification.Application.Interfaces
 {
     public interface ILoginService
     {
-
         public Task<LoginAuth> LoginVerificationAsync(string username, string password, CancellationToken cancellationToken);
     }
 }

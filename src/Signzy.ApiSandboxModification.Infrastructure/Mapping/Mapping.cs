@@ -26,6 +26,14 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Mapping
         public const string CountryCode = "CountryCode";
         public const string MobileNumber = "MobileNumber";
         public const string ReferenceId = "ReferenceId";
+        public const string CreationDate = "CreationDate";
+        public const string CreatedBy = "CreatedBy";
+        public const string FirstName = "FirstName";
+        public const string LastName = "LastName";
+        public const string UserName = "UserName";
+        public const string Password = "Password";
+        public const string Email  = "Email";
+        public const string Role  = "Role";
 
 
 

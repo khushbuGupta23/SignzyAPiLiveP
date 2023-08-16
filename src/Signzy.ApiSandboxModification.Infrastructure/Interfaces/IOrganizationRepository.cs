@@ -9,7 +9,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure.Interfaces
 {
     public interface IOrganizationRepository
     {
-        public Task<UanNumber> SearchUanAsync(EssentialsUAN essentials1, CancellationToken cancellationToken);
-        public Task<UdyamRegiResponse> UdyamRegistrationAsync(string udyamNumber, CancellationToken cancellationToken);
+        public Task<IEnumerable<TblAuth>> SearchUanAsync(CancellationToken cancellationToken);
+        public Task<IEnumerable<TblAuth>> UdyamRegistrationAsync(CancellationToken cancellationToken);
     }
 }
