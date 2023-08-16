@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iB7LFhilRZeDxG+hNZ148PR/K3TOF4y/wUyYd2YmVGucfQOtLraZwjql7dJLYDFmgRWqrO8bxHPbLvv9fYwlyQ==",
+  "dgSpecHash": "08BSgH2srq6ok4H8ijUSSzSpSGpGTxUZzlvFoi7j7Y1N3GCV8GWsfUIEWWT570uDvtvAP44tCMIP0zZ7s1er9Q==",
   "success": true,
   "projectFilePath": "E:\\signzy-api-sandbox-modification\\src\\Signzy.ApiSandboxModification.API\\Signzy.ApiSandboxModification.API.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,6 @@
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
-    "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.10\\microsoft.aspnetcore.identity.ui.7.0.10.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
     "C:\\Users\\Khushbu\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",

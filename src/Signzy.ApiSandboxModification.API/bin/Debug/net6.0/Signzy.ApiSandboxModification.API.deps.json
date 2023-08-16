@@ -13,7 +13,6 @@
           "DinkToPdf": "1.0.8",
           "MailKit": "4.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
-          "Microsoft.AspNetCore.Identity.UI": "7.0.10",
           "MimeKit": "4.1.0",
           "Signzy.ApiSandboxModification.Application": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
@@ -324,7 +323,6 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/7.0.10": {},
       "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
@@ -1622,13 +1620,6 @@
       "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Identity.UI/7.0.10": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SxlAutmDx+pj1ENwh3lFSgAKSkUUMA1uGl8zCfL7uXbnwjSDvUZrMqGf7vahY0Ts2uqfQOjrP5NTMFn3QXSPsg==",
-      "path": "microsoft.aspnetcore.identity.ui/7.0.10",
-      "hashPath": "microsoft.aspnetcore.identity.ui.7.0.10.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
       "type": "package",
