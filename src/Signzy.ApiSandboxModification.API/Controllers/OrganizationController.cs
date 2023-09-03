@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Signzy.ApiSandboxModification.Application.Interfaces;
-using Signzy.ApiSandboxModification.Domain.Entities;
+using Signzy.ApiSandboxModification.Domain.Entities.OrganizationModel;
 
 namespace Signzy.ApiSandboxModification.API.Controllers
 {
@@ -21,6 +21,7 @@ namespace Signzy.ApiSandboxModification.API.Controllers
             return await _organizationService.SearchUanAsync(essentials1, cancellationToken);
         }
 
+
         [HttpPost]
         [Route("UdyamRegistrationAsync")]
         public async Task<UdyamRegiResponse>UdyamRegistrationAsync(string udyamNumber, CancellationToken cancellationToken)
@@ -29,5 +30,33 @@ namespace Signzy.ApiSandboxModification.API.Controllers
         }
 
 
+        [HttpPost]
+        [Route("ShopAndEstablishmentasync")]
+        public async Task<ShopAndEstablishmentModel> ShopAndEstablishmentasync(string registrationNumber, string state, CancellationToken cancellationToken)
+        {
+            return await _organizationService.ShopAndEstablishmentasync(registrationNumber, state, cancellationToken);
+        }
+
+
+        [HttpGet]
+        [Route("GetAllStateListAsync")]
+        public async Task<IEnumerable<StateMasterModel>> GetAllStateListAsync(CancellationToken cancellationToken)
+        {
+            return await _organizationService.GetAllStateListAsync(cancellationToken);
+        }
+
+        [HttpPost]
+        [Route("EmpNameSearchV2Async")]
+        public async Task<EmpNameSerachV2Model>EmpNameSearchV2Async([FromQuery] EssentialsENSV essential, CancellationToken cancellationToken)
+        {
+            return await _organizationService.EmpNameSearchV2Async(essential, cancellationToken);
+        }
+
+        [HttpPost]
+        [Route("ICAIAsync")]
+        public async Task<ICAIModel> ICAIAsync([FromQuery] EssentialsICAI essential, CancellationToken cancellationToken)
+        {
+            return await _organizationService.ICAIAsync(essential, cancellationToken);
+        }
     }
 }

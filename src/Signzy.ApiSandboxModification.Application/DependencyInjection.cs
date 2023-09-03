@@ -2,6 +2,7 @@
 using Signzy.ApiSandboxModification.Application.Interfaces;
 using Signzy.ApiSandboxModification.Application.Services;
 using Signzy.ApiSandboxModification.Application.Services.Addressproof;
+using Signzy.ApiSandboxModification.Application.Services.APIMasterService;
 using Signzy.ApiSandboxModification.Application.Services.SignzyLoginService;
 using Signzy.ApiSandboxModification.Application.Services.UserDetail;
 
@@ -13,6 +14,7 @@ namespace Signzy.ApiSandboxModification.Application
         public static void AddApplication(this IServiceCollection services)
         {
 
+            services.AddScoped<IApiMasterService, ApiMasterService>();
             services.AddScoped<IAddressProofService,AddressProofService>();
             services.AddScoped<IGstrInitiationsService, GstrInitiationsService>();
             services.AddScoped<IPanToGstService, PanToGstService>();

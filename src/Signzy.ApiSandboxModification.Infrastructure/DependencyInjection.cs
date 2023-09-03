@@ -12,6 +12,7 @@ namespace Signzy.ApiSandboxModification.Infrastructure
         {  
 
             services.AddScoped<IGstrInitiationsRepository, GstrInitiationsRepository>();
+            services.AddScoped<IApiMasterRepository, ApiMasterRepository>();
             services.AddScoped<IPanToGstRepository, PanToGstRepository>();
             services.AddScoped<IOrganizationRepository, OrganizationRepository>();
             services.AddScoped<IAddressProofsRepository, AddressProofsRepository>();

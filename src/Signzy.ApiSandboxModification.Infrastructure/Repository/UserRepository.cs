@@ -1,16 +1,8 @@
 ﻿using Dapper;
-using Signzy.ApiSandboxModification.Domain.Entities;
 using Signzy.ApiSandboxModification.Domain.Entities.JwtLogin;
 using Signzy.ApiSandboxModification.Infrastructure.Data.Dapper;
 using Signzy.ApiSandboxModification.Infrastructure.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Signzy.ApiSandboxModification.Infrastructure.Repository
 {
